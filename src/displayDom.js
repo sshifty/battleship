@@ -1,10 +1,13 @@
 import { makeShip } from "./shipFactory";
 import { gameBoard } from "./gameBoardFactory";
+import image from './github.png';
 
 export const displayDom=function(playerDeck,compDeck,clickEvent){
     const playerBoard=document.querySelector(".player-board");
     const compBoard=document.querySelector(".comp-board");
     const board=document.querySelector(".board");
+    const img=document.querySelector(".pics");
+    img.src=image;
     
     playerBoard.innerHTML='';
     compBoard.innerHTML='';

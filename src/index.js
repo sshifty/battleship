@@ -2,6 +2,8 @@ import { displayDom } from "./displayDom";
 import { gameBoard } from "./gameBoardFactory";
 import { makeShip } from "./shipFactory";
 import { player } from "./player";
+import style from './style.css';
+import image from './github.png';
 const modal = document.querySelector(".modal");
 const checkWinner = (winner, gamePlay) => {
   const winnerText = document.querySelector(".winner");
